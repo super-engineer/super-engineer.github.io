@@ -1,0 +1,162 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+ */
+/*basic reset*/
+/* line 16, /home/akshay/super_engineer/super-engineer.heroku.io/source/stylesheets/all.css.scss */
+* {
+  margin: 0;
+  padding: 0; }
+
+/*adding a black bg to the body to make things clearer*/
+@font-face {
+  font-family: 'Monospace';
+  src: url("/assets/Monospace.ttf") format("ttf"), url("/assets/Monospace.Bold") format("ttf");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 27, /home/akshay/super_engineer/super-engineer.heroku.io/source/stylesheets/all.css.scss */
+body {
+  background: black;
+  font-family: "Monospace"; }
+
+/* line 32, /home/akshay/super_engineer/super-engineer.heroku.io/source/stylesheets/all.css.scss */
+canvas#c {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; }
+
+/* line 40, /home/akshay/super_engineer/super-engineer.heroku.io/source/stylesheets/all.css.scss */
+canvas#t {
+  display: block;
+  position: fixed;
+  top: 300px;
+  left: 300px;
+  z-index: 1;
+  background: red; }
+
+/* line 49, /home/akshay/super_engineer/super-engineer.heroku.io/source/stylesheets/all.css.scss */
+.element {
+  opacity: 0.75;
+  color: #37FF37;
+  /*  position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -120px;
+    margin-left: -170px;
+    width: 300px;
+    height: 200px;*/
+  z-index: 1;
+  border: 3px solid #0DAF06;
+  /*margin: 10px;*/
+  background: black;
+  /*text-align: center;*/
+  /*padding: 20px;*/
+  /*vertical-align:middle;*/ }
+
+/* line 68, /home/akshay/super_engineer/super-engineer.heroku.io/source/stylesheets/all.css.scss */
+#typed-cursor {
+  opacity: 1;
+  font-weight: 100;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  -ms-animation: blink 0.7s infinite;
+  -o-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite; }
+
+@-keyframes blink {
+  /* line 78, /home/akshay/super_engineer/super-engineer.heroku.io/source/stylesheets/all.css.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 81, /home/akshay/super_engineer/super-engineer.heroku.io/source/stylesheets/all.css.scss */
+  50% {
+    opacity: 0; }
+
+  /* line 84, /home/akshay/super_engineer/super-engineer.heroku.io/source/stylesheets/all.css.scss */
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes blink {
+  /* line 88, /home/akshay/super_engineer/super-engineer.heroku.io/source/stylesheets/all.css.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 91, /home/akshay/super_engineer/super-engineer.heroku.io/source/stylesheets/all.css.scss */
+  50% {
+    opacity: 0; }
+
+  /* line 94, /home/akshay/super_engineer/super-engineer.heroku.io/source/stylesheets/all.css.scss */
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes blink {
+  /* line 98, /home/akshay/super_engineer/super-engineer.heroku.io/source/stylesheets/all.css.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 101, /home/akshay/super_engineer/super-engineer.heroku.io/source/stylesheets/all.css.scss */
+  50% {
+    opacity: 0; }
+
+  /* line 104, /home/akshay/super_engineer/super-engineer.heroku.io/source/stylesheets/all.css.scss */
+  100% {
+    opacity: 1; } }
+
+@-ms-keyframes blink {
+  /* line 108, /home/akshay/super_engineer/super-engineer.heroku.io/source/stylesheets/all.css.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 111, /home/akshay/super_engineer/super-engineer.heroku.io/source/stylesheets/all.css.scss */
+  50% {
+    opacity: 0; }
+
+  /* line 114, /home/akshay/super_engineer/super-engineer.heroku.io/source/stylesheets/all.css.scss */
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes blink {
+  /* line 118, /home/akshay/super_engineer/super-engineer.heroku.io/source/stylesheets/all.css.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 121, /home/akshay/super_engineer/super-engineer.heroku.io/source/stylesheets/all.css.scss */
+  50% {
+    opacity: 0; }
+
+  /* line 124, /home/akshay/super_engineer/super-engineer.heroku.io/source/stylesheets/all.css.scss */
+  100% {
+    opacity: 1; } }
+
+/* line 127, /home/akshay/super_engineer/super-engineer.heroku.io/source/stylesheets/all.css.scss */
+.element {
+  height: 0;
+  width: 0;
+  position: fixed;
+  opacity: 0;
+  overflow: hidden; }
+
+/* line 135, /home/akshay/super_engineer/super-engineer.heroku.io/source/stylesheets/all.css.scss */
+.element.animate {
+  opacity: 0.75;
+  padding: 30px;
+  width: 220px;
+  height: 76px;
+  top: 50%;
+  left: 50%;
+  margin-top: -68px;
+  margin-left: -140px;
+  -webkit-transition: height, width, margin-left, margin-top, padding, opacity;
+  -webkit-transition-duration: 1s;
+  -webkit-transition-timing-function: ease; }
