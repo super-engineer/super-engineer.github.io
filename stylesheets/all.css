@@ -160,3 +160,8 @@ canvas#t {
   -webkit-transition: height, width, margin-left, margin-top, padding, opacity;
   -webkit-transition-duration: 1s;
   -webkit-transition-timing-function: ease; }
+
+h1{
+  font-size: 14px;
+  margin-bottom: 5px;
+}
